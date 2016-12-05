@@ -1,0 +1,74 @@
+body {
+	margin:0;
+}
+
+#header {
+	margin: 20px auto;
+	height: 50px;
+	width:800px;
+	border-bottom:1px solid #e24d4d;
+	color:#b74242;
+	font-family:arial;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+#sketch_box {
+	height:800px;
+	width:100%;
+}
+
+.container {
+	width:800px;
+	margin:0 auto;
+	position:relative;
+}
+
+#button_box {
+	width:800px;
+	margin:0 auto;
+	position:relative;
+}
+
+#greeting {
+	font-size:14px;
+	font-family:arial;
+	color:#000;
+	text-align:center;
+}
+
+#button_container {
+	margin:0 auto;
+	position:relative;
+	left:165px;
+}
+
+button {
+	float:left;
+	display:inline;
+	margin:20px;
+	position:relative;
+	
+}
+
+#sketch {
+	width:100%;
+	border:1px solid #000;
+	position:relative;
+	border-collapse:collapse;
+}
+
+.box {
+	margin:0px;
+	padding:0px;
+	background-color:#fff;
+}
+
+
+
+
+
+
+
+
