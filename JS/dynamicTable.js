@@ -1,6 +1,13 @@
 $(document).ready(function() {
 
-	newGrid(50);
+	newGrid(100);
+
+	$("#newGrid").click(function() { 
+		userInputGrid(); 
+		$(".box").mouseenter(function() {
+			$(this).css("background-color","black");
+		});
+	});
 
 	$(".box").mouseenter(function() {
 		$(this).css("background-color","black");
@@ -17,11 +24,20 @@ $(document).ready(function() {
 			$(this).css("background-color","black");
 		});
 	});
+
+	$("#greyGrid").click(function() {
+		$(".box").mouseenter(function() {
+			$(this).css("background-color","grey");
+		});
+	});
+
 	
+
 });
 
 function newGrid(dimension) {
 	var $sketch = $("#sketch");
+	$sketch.html("");
 	for (var i = 0; i < dimension; i++) {
 		var $sketch = $("#sketch");
 		var $table = $("<tr>");
@@ -45,6 +61,7 @@ function userInputGrid() {
 	return number;
 }
 
+//adapted from https://css-tricks.com/snippets/javascript/random-hex-color/
 function getRandomColor() {
     var letters = '0123456789ABCDEF'.split('');
     var color = '#';
